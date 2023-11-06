@@ -4,14 +4,12 @@
 * @Last Modified by: fw168
 * @Last Modified time: 2023-10-27 15:21:40
 */
-
 interface regexpInterFace {
     [key: string]: {
         reg: RegExp,
         regMsg: string
     }
 }
-
 export const regexp: regexpInterFace = {
     telephone: {
         reg: /^0\d{2,3}-?\d{7,8}$|^1[3456789]\d{9}$/,
